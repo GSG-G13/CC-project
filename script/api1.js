@@ -75,3 +75,25 @@ toggleThemeButton.addEventListener('click', function() {
     linkElement.setAttribute('href', 'CSS/style.css');
   }
 });
+
+function convertToUSD(amount, sourceCurrency) {
+  const xhr = new XMLHttpRequest();
+  const url = `https://api.frankfurter.app/latest?from=${sourceCurrency}&to=USD`;
+
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        const data = JSON.parse(xhr.responseText);
+        const usdAmount = amount * data.rates.USD;
+        console.log(`Converted to USD: ${usdAmount}`);
+      } else {
+        console.log(`Error: ${xhr.status}`);
+      }
+    }
+  };
+
+  xhr.open('GET', url);
+  xhr.send();
+}
+
+
