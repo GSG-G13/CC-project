@@ -112,3 +112,169 @@
   }
 }
 
+
+
+/* Abdullah */
+
+
+
+/* Abdullah start from here */
+
+/* require to welcome screen */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Start Header Section */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: rgb(63 81 181 / 4%) 0px 25px 20px -20px;
+  margin-bottom: 2rem;
+  user-select: none;
+  padding: 0 1.5rem;
+} */
+
+/* Start Main Section */
+
+
+/* Start coin-2 Section */
+
+.crypto-rank, .crypto-inflation-7D{
+  display: none;
+}
+main .coin-2{
+  border: 1px solid #00008040;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  height: 41vh;
+  overflow: auto
+}
+main .coin-2  header{
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border: 1px solid;
+    border-color: transparent transparent #0000801f transparent;
+    font-weight: 600;
+    color: navy;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+main .coin-2 main .row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+
+      border-bottom: 1px solid #00008017;
+    border-radius: 2rem;
+}
+.coin-2 > header > *, .coin-2 > main > .row> *{
+  width: 20% ;
+  text-align: center
+}
+.crypto-name{
+  text-align: left !important;
+  margin-right: -45px;
+  font-weight: 600;
+  
+}
+header .crypto-name{
+  color: navy
+}
+
+/* @ media  */
+@media (min-width: 600px) {
+  .crypto-rank{
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  /* header, footer{
+    padding: 0 10rem;
+  } */
+  body> main {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    gap: 1vw;
+  }
+  .coin-2{
+    width: 60vw;
+    height: 78vh !important;
+  }
+}
+@media (min-width: 1200px) {
+  body> main{
+    width: 90vw;
+    margin: 3rem 5rem;
+    /* margin: 0 auto; */
+  } 
+  .coin-2{
+    width: 50vw;
+  }
+}
+
+
+/* body:not(footer body>header){
+  background-color: rgb(63 81 181 / 4%);
+} */
+
+
+/*! Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px navy;  */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2196f31f; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2196f32f; 
+}
+
+/* ! when select any element in website */
+::selection {
+    background: rgb(181, 215, 253);
+}
+
+
+.none{
+  display: none;
+}
+.main-developers{
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.show {
+  visibility: visible !important;
+}
+
+a {
+  text-decoration: none;
+}
