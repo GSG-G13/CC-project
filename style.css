@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+}
+#header {
+  display: flex;
+  height: 30%;
+  justify-content: space-between;
+  margin: 0.75rem 5rem 0;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.l-s {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.l-s h1 {
+  font-family: "Tilt Warp", cursive;
+  font-size: 30px;
+  font-weight: normal;
+  color: navy;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.currency {
+  width: 45%;
+  height: 40px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #f0f0f8;
+  background-color: #536872;
+  margin: 0 10px;
+}
+
+#num,
+#ans {
+  width: 45%;
+  height: 40px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  background-color: rgb(179, 183, 185);
+}
+
+#ans {
+  background-color: rgb(179, 183, 185);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f6f6f5;
+  background-image: linear-gradient(
+    to right,
+    #6e7f80,
+    #536872,
+    #708090,
+    #536878,
+    #36454f
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+
+  height: 50px; /* edit */
+}
+
+.btn:hover {
+  background-color: #041e42;
+  background-image: none;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #041e42;
+  background-image: none;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .r-s {
+    width: 90%;
+  }
+  .l-s {
+    height: 40vh;
+  }
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.crypto-rank,
+.crypto-inflation-7D {
+  display: none;
+}
+main .coin-2 {
+  border: 1px solid #00008040;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  height: 41vh;
+  overflow: auto;
+}
+main .coin-2 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border: 1px solid;
+  border-color: transparent transparent #0000801f transparent;
+  font-weight: 600;
+  color: navy;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+main .coin-2 main .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+
+  border-bottom: 1px solid #00008017;
+  border-radius: 2rem;
+}
+.coin-2 > header > *,
+.coin-2 > main > .row > * {
+  width: 20%;
+  text-align: center;
+}
+.crypto-name {
+  text-align: left !important;
+  margin-right: -45px;
+  font-weight: 600;
+}
+header .crypto-name {
+  color: navy;
+}
+
+@media (min-width: 600px) {
+  .crypto-rank {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  body > main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1vw;
+  }
+  .coin-2 {
+    width: 60vw;
+    height: 78vh !important;
+  }
+}
+@media (min-width: 1200px) {
+  body > main {
+    width: 90vw;
+    margin: 3rem 5rem;
+  }
+  .coin-2 {
+    width: 50vw;
+  }
+}
+
+/*! Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2196f31f;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2196f32f;
+}
+
+/* ! when select any element in website */
+::selection {
+  background: rgb(181, 215, 253);
+}
+
+.none {
+  display: none;
+}
+.main-developers {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.show {
+  visibility: visible !important;
+}
+
+a {
+  text-decoration: none;
+}

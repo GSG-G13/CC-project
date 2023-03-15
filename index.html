@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CC</title>
-  <link id="theme-link" rel="stylesheet" href="CSS/style.css" >
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://cdn.logojoy.com/wp-content/uploads/20200305144650/Bitcoin-icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,9 +13,7 @@
 </head>
 <body>
   <header id="header">
-    <img src="https://icons-for-free.com/iconfiles/png/512/bitcoin+currency+money+exchange-1320568025983505736.png" id="logo">
-    <button id="toggle-theme"><i class="fa fa-sun-o"></i></button>
-
+    <img src="https://icons-for-free.com/iconfiles/png/512/bitcoin+currency+money+exchange-1320568025983505736.png" id="logo" style="user-select:none">
   </header>
   <main>
     <section class="container">
@@ -24,7 +22,7 @@
         <div class="box">
             <div class="left_box">
                 <select name="currency" class="currency"></select>
-                <input type="number" name="" id="num">
+                <input type="number" name="" id="num" min="0" value="1">
             </div>
             <div class="right_box">
                 <select name="currency" class="currency"></select>
@@ -33,8 +31,19 @@
         </div>
         <button class="btn" id="btn">Convert <i class="fa fa-retweet"></i></button>
       </section>
-      <section class="r-s">
-        <!-- Abdullah -->
+      <section class="r-s coin-2">
+        
+        <header>
+          <div class="crypto-rank">Rank</div>
+          <div class="crypto-name">Name</div>
+          <div class="crypto-inflation-24H">Inflation/24H</div>
+          <!-- <div class="crypto-inflation-7D">Inflation/7D</div> -->
+          <div class="crypto-price">Exchange USD</div>
+        </header>
+        <main>
+          <!-- To add from JS file (api data) -->
+        </main>
+      
       </section>
     </div>
   </main>
