@@ -139,6 +139,9 @@ body {
   .l-s {
     height: 40vh;
   }
+  #header{
+        margin: 0
+  }
 }
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -171,7 +174,6 @@ main .coin-2 header {
   margin-bottom: 1rem;
   position: sticky;
   top: 0;
-  background-color: white;
 }
 main .coin-2 main .row {
   display: flex;
